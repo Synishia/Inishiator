@@ -1,7 +1,6 @@
 From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
-From: Paul Sauve <paul@technove.co>
 Date: Wed, 3 Feb 2021 23:02:38 -0600
-Subject: [PATCH] MyAirplaneFork branding
+Subject: [PATCH] Inishiator branding
 
 
 diff --git a/pom.xml b/pom.xml
@@ -14,8 +13,8 @@ index 63734956a85935b5c1d105a4e4031925120c08b2..37b92213fb878d8429e6dd049fe9a151
          <dependency>
 -            <groupId>gg.airplane</groupId>
 -            <artifactId>airplane-api</artifactId>
-+            <groupId>com.mygroupid</groupId>
-+            <artifactId>myairplanefork-api</artifactId>
++            <groupId>org.synishia</groupId>
++            <artifactId>inishiator-api</artifactId>
              <version>${project.version}</version>
              <scope>compile</scope>
          </dependency>
