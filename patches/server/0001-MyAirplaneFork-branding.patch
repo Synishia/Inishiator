@@ -29,8 +29,8 @@ index bf0072b394fd71e02d3cc4a93fa3ca95ae4307c6..e9087874f52b1761b48c0e7557e187e9
      public String getVersionMessage(@Nonnull String serverVersion) {
 -        String[] parts = serverVersion.substring("git-Airplane-".length()).split("[-\\s]"); // Airplane // Tuinity
 -        String updateMessage = getUpdateStatusMessage("TECHNOVE/Airplane", GITHUB_BRANCH_NAME, parts[0]); // Airplane // Tuinity
-+        String[] parts = serverVersion.substring("git-MyAirplaneFork-".length()).split("[-\\s]"); // MyAirplaneFork // Airplane // Tuinity
-+        String updateMessage = getUpdateStatusMessage("MyGithubName/MyAirplaneFork", GITHUB_BRANCH_NAME, parts[0]); // MyAirplaneFork // Airplane // Tuinity
++        String[] parts = serverVersion.substring("git-Inishiator-".length()).split("[-\\s]"); // MyAirplaneFork // Airplane // Tuinity
++        String updateMessage = getUpdateStatusMessage("Synthia/Inishiator", GITHUB_BRANCH_NAME, parts[0]); // MyAirplaneFork // Airplane // Tuinity
          String history = getHistory();
  
          return history != null ? history + "\n" + updateMessage : updateMessage;
@@ -43,7 +43,7 @@ index 47fd400da3f938ead3a281fe1e4d24a1a3809776..3b0359a71673071a0aa00052bf122a8e
  
      public String getServerModName() {
 -        return "Airplane"; // Airplane // Tuinity //Paper - Paper > // Spigot - Spigot > // CraftBukkit - cb > vanilla!
-+        return "MyAirplaneFork"; // MyAirplaneFork // Airplane // Tuinity //Paper - Paper > // Spigot - Spigot > // CraftBukkit - cb > vanilla!
++        return "Inishiator"; // MyAirplaneFork // Airplane // Tuinity //Paper - Paper > // Spigot - Spigot > // CraftBukkit - cb > vanilla!
      }
  
      public CrashReport b(CrashReport crashreport) {
@@ -56,7 +56,7 @@ index 2c4052419682b0301b987a68cd72d2719dc89e7c..3c0558de9e103fe6eb09f5685bb8367d
  
  public final class CraftServer implements Server {
 -    private final String serverName = "Airplane"; // Paper // Tuinity // Airplane
-+    private final String serverName = "MyAirplaneFork"; // Paper // Tuinity // Airplane // MyAirplaneFork
++    private final String serverName = "Inishiator"; // Paper // Tuinity // Airplane // MyAirplaneFork
      private final String serverVersion;
      private final String bukkitVersion = Versioning.getBukkitVersion();
      private final Logger logger = Logger.getLogger("Minecraft");
@@ -69,7 +69,7 @@ index 1788d79ea489e446d3d9f541693d4ba3dfc26015..99ce1c691407a8220bc1cbbcda42b658
          String result = "Unknown-Version";
  
 -        InputStream stream = Bukkit.class.getClassLoader().getResourceAsStream("META-INF/maven/gg.airplane/airplane-api/pom.properties"); // Tuinity // Airplane
-+        InputStream stream = Bukkit.class.getClassLoader().getResourceAsStream("META-INF/maven/com.mygroupid/myairplanefork-api/pom.properties"); // Tuinity // Airplane // MyAirplaneFork
++        InputStream stream = Bukkit.class.getClassLoader().getResourceAsStream("META-INF/maven/org.synishia/inishiator-api/pom.properties"); // Tuinity // Airplane // MyAirplaneFork
          Properties properties = new Properties();
  
          if (stream != null) {
